@@ -7,9 +7,9 @@
 Поэтому личную и секретную информацию (логины, пароли, ключи, токены и т.д.) можно сохранить в файле personal.auto.tfvars, так как он будет проигнорирован при коммите и не попадет в репозиторий.
 
 
-![alt text](<Скриншот 10.11.24_18.14.58.png>)
+![Password](https://github.com/garrkiss/terraform_1/blob/main/img/randow_password.png)
 
-![alt text](<Скриншот 10.11.24_18.14.58.png>)
+![Terraform validate](https://github.com/garrkiss/terraform_1/blob/main/img/terraform_validate.png)
 
 
 ### Исправленый код
@@ -31,6 +31,6 @@ resource "docker_container" "nginx" {
 
 ```
 
-![Dockeps](<Скриншот 10.11.24_18.14.58.png>)
+![Dockeps](https://github.com/garrkiss/terraform_1/blob/main/img/dockerps.png)
 
 

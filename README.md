@@ -1,1 +1,36 @@
-# terraform_1
+# Домашнее задание к занятию "`Введение в Terraform`" - `Бакулев Евгений`
+
+### Задание 1
+
+В данном файле .gitignore указано, что файлы с расширением .tfstate и каталог .terraform будут проигнорированы и не попадут в контроль версий. Также указан файл personal.auto.tfvars, который не будет добавлен в репозиторий.
+
+Поэтому личную и секретную информацию (логины, пароли, ключи, токены и т.д.) можно сохранить в файле personal.auto.tfvars, так как он будет проигнорирован при коммите и не попадет в репозиторий.
+
+
+![alt text](<Скриншот 10.11.24_18.14.58.png>)
+
+![alt text](<Скриншот 10.11.24_18.14.58.png>)
+
+
+### Исправленый код
+```
+resource "docker_image" "nginx" {
+  name         = "nginx:latest"
+  keep_locally = true
+}
+
+resource "docker_container" "nginx" {
+  image = docker_image.nginx.image_id
+  name  = "example_${random_password.random_string.result}"
+
+  ports {
+    internal = 80
+    external = 9090
+  }
+}
+
+```
+
+![Dockeps](<Скриншот 10.11.24_18.14.58.png>)
+
+

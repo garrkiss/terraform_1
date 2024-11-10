@@ -33,4 +33,12 @@ resource "docker_container" "nginx" {
 
 ![Dockeps](https://github.com/garrkiss/terraform_1/blob/main/img/dockerps.png)
 
+![Dockeps](https://github.com/garrkiss/terraform_1/blob/main/img/dockerps_hello.png)
+
+![tfstate](https://github.com/garrkiss/terraform_1/blob/main/img/terraform-tfstate.png)
+
+
+Keep_locally - (Необязательно, логическое значение) Если true, то образ Docker не будет удален при операции уничтожения. Если это ложь, он удалит изображение из локального хранилища докера при операции уничтожения.
+
+
 

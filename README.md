@@ -13,27 +13,29 @@
 
 ### Ошибки
 
-1)
+1. 
 ```
 24: resource "docker_image" {
 All resource blocks must have 2 labels (type, name).
 ```
 Ответ:
 Пропущено название ресурса блока
-2)
 
+2. 
 ```
 29: resource "docker_container" "1nginx" {
 A name must start with a letter or underscore and may contain only letters, digits, underscores, and dashes.
 ```
 Ответ:
 Название ресурса блока должно начинаться с буквы
-3)
+
+3. 
 ```
 31: name = "example_${random_password.random_string_FAKE.resulT}"
 A managed resource "random_password" "random_string_FAKE" has not been declared in the root module.
 ```
-4)
+
+4. 
 ```
 31: name = "example_${random_password.random_string.resulT}"
 This object has no argument, nested block, or exported attribute named "resulT".
